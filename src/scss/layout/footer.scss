@@ -1,0 +1,21 @@
+.footer{
+  background: $color-white;
+  border-radius: 4rem 4rem 0 0;
+  color: $color-dark-grey;
+  width: 100%;
+
+  &__wrapper {
+    padding: 2%;
+  }
+
+  & li {
+    line-height: 3;
+    list-style: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #footer-logo {
+    max-width: 300px;
+  }
+}

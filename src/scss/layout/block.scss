@@ -1,0 +1,27 @@
+.block__wrapper{
+  background-color: $color-white;
+  border-radius: 4rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 5%;
+  padding: 2%;
+  width: 90%;
+  max-height: 100%;
+  min-height: 640px;
+  
+}
+.main__wrapper{
+  max-width: 1600px;
+  max-height: 1200px;
+  margin:auto;
+}
+@media only screen and (max-width: 1233px) {
+  .block__wrapper{
+    min-height: 480px;
+  }
+}
+@media only screen and (max-width: 823px) {
+  .block__wrapper{
+    margin-top:52px;
+  }
+}

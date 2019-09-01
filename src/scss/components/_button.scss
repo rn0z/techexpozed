@@ -1,0 +1,88 @@
+.button{
+    background: $color-primary;
+    border-radius: 2rem;
+    color: $color-white;
+}
+.button:hover{
+    background: $color-primary;
+    border-radius: 2rem;
+    color: $color-white;
+}
+.dot {
+    position: absolute;
+    top: 45%;
+    &-comment{
+      left: -17.5%;
+    }
+    &-landing-area{
+      left: -0.5%;
+    }
+    &__button {
+      background: $dot-color;
+      border: 0;
+      border-radius: 5rem;
+      display: block;
+      margin-bottom: 1.2rem;
+      padding: .5rem 0;
+      width: 1.2rem; height: 1.2rem;
+      transition: all .3s;
+      &:hover {
+        background: $color-tertiary;
+      }
+
+      &:focus {
+        box-shadow: inset 0 0 0 3px $color-primary;
+        outline: 0;
+      }
+
+      &:active {
+        background: darken( $dot-color, 30% )
+      }
+    }
+    .active {
+      background: darken( $dot-color, 30% );
+      width: 1.2rem; height: 3.5rem;
+    }
+    .active:focus {
+      box-shadow: inset 0 0 0 3px darken( $color-primary, 10%);
+    }
+}
+
+.left-chevron-button, .right-chevron-button {
+  border: 0 solid transparent;
+  width: 23px; height: 37px;
+}
+.left-chevron-button {
+  background: url("/images/icons/left-black-arrow.png") no-repeat scroll center center;
+}
+
+.right-chevron-button {
+  background: url("/images/icons/right-black-arrow.png") no-repeat scroll center center;
+}
+
+@media screen and (max-width: 768px) {
+  .dot{
+    display: flex;
+    position: initial;
+    justify-content: center;
+    &__button{
+      margin:0 1rem 1rem 1rem;
+    }
+    .active {
+        background: darken( $dot-color, 30% );
+        width: 3.5rem; height: 1.2rem;
+      }
+  }
+}
+@media screen and (max-width: 1580px) {
+  .dot-comment{
+    left: -8%;
+    top: 40%;
+  }
+}
+@media screen and (max-width: 1430px) {
+  .dot-comment{
+    left: 0%;
+    top: 30%;
+  }
+}

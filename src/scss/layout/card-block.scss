@@ -1,0 +1,26 @@
+.card-block-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 0;
+}
+.card-block {
+    background: $color-white;
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 450px;
+}
+.card-block-body {
+    margin: 15px;
+}
+
+@media only screen and (max-width: 1200px) { // Responsive design changes to adapt to different screen sizes
+    .card-block-container {
+        display: block;
+        margin: 10px;
+    }
+    .card-block {
+        width: 100%; max-width: 550px;
+    }
+}
