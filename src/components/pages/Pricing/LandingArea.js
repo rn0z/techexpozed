@@ -1,8 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-import Block from './../../HOC/Block';
-import NavbarLinks from '../../Navigation/NavbarLinks';
-import * as data from './data'
+import Block from './../../HOC/Block'
 
 const LandingArea = (props) => {
     return (
@@ -42,5 +39,3 @@ const LandingArea = (props) => {
         </Block>
     )
 }
-
-export default LandingArea;
