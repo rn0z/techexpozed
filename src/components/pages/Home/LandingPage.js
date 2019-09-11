@@ -116,7 +116,7 @@ class LandingPage extends React.Component {
                             </div>
                         </div>
                         <div className="col-md-6 right" >
-                        <img src={`${image}`} alt="landing-cover" />
+                            <img src={`${image}`} alt="landing-cover" />
                         </div> 
                         <div className="col-md-1 ">
                             <span><img src="./images/icons/behance-logo.svg" alt="behance-logo"/></span>
