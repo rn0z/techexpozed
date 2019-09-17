@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import NavbarLinks from '../../Navigation/NavbarLinks'
 import Block from './../../HOC/Block'
 
 const LandingArea = (props) => {
@@ -18,14 +20,14 @@ const LandingArea = (props) => {
                         <div id="paragraph">
                             <h1 classNmae="heading-large">
                                 <span className="alternate-heading-color">
-                                    Our Team <br />
+                                    Pricing <br />
                                 </span>
                             </h1>
-                            <p>{data.landingAread.parah}</p>
+                            <p>Hello Pricing</p>
                         </div>
                     </div>
                     <div className="col-md-6 right" >
-                        <img src={data.landingAread.picture} alt="landing-cover" />
+                        <img src={"./images/our-team/Group266.png"} alt="landing-cover" />
                     </div>
                     <div className="col-md-1">
                         <span><img src="./images/icons/behance-logo.svg" alt="behance-logo"/></span>
@@ -39,3 +41,5 @@ const LandingArea = (props) => {
         </Block>
     )
 }
+
+export default LandingArea

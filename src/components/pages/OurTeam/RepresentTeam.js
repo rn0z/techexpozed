@@ -18,7 +18,6 @@ class Team extends React.Component {
 
     render() {
         let chunkedAvatarsList = this.chunkArray(data.avatarsList, 3)
-        console.log(chunkedAvatarsList);
         
         return (
             <div>

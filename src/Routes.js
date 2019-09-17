@@ -1,11 +1,11 @@
 import React from 'react';
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch } from 'react-router-dom';
 import Layout from './components/HOC/Layout';
-import Home from "./components/pages/Home";
-import OurTeam from "./components/pages/OurTeam";
-import OurWork from "./components/pages/OurWork";
-import Pricing from "./components/pages/Pricing";
-import Contact from "./components/pages/Contact";
+import Home from './components/pages/Home';
+import OurTeam from './components/pages/OurTeam';
+import OurWork from './components/pages/OurWork';
+import Pricing from './components/pages/Pricing';
+import Contact from './components/pages/Contact';
 const Routes = () => {
     return (
         <Layout>
